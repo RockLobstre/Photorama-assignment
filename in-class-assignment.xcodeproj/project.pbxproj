@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2CC84C7B223B381D00DDA106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC84C7A223B381D00DDA106 /* AppDelegate.swift */; };
-		2CC84C7D223B381D00DDA106 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC84C7C223B381D00DDA106 /* ViewController.swift */; };
 		2CC84C80223B381D00DDA106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC84C7E223B381D00DDA106 /* Main.storyboard */; };
 		2CC84C82223B382100DDA106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC84C81223B382100DDA106 /* Assets.xcassets */; };
 		2CC84C85223B382100DDA106 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC84C83223B382100DDA106 /* LaunchScreen.storyboard */; };
+		2CC84CA1223B3F1C00DDA106 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC84CA0223B3F1C00DDA106 /* PhotosViewController.swift */; };
+		2CC84CA3223B3F9200DDA106 /* FlickerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC84CA2223B3F9200DDA106 /* FlickerAPI.swift */; };
+		2CC84CA5223B3FB800DDA106 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC84CA4223B3FB800DDA106 /* PhotoStore.swift */; };
+		2CC84CA7223B415F00DDA106 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC84CA6223B415F00DDA106 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CC84C77223B381D00DDA106 /* in-class-assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "in-class-assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC84C7A223B381D00DDA106 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CC84C7C223B381D00DDA106 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CC84C7F223B381D00DDA106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CC84C81223B382100DDA106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC84C84223B382100DDA106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CC84C86223B382100DDA106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC84CA0223B3F1C00DDA106 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		2CC84CA2223B3F9200DDA106 /* FlickerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerAPI.swift; sourceTree = "<group>"; };
+		2CC84CA4223B3FB800DDA106 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		2CC84CA6223B415F00DDA106 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				2CC84C7A223B381D00DDA106 /* AppDelegate.swift */,
-				2CC84C7C223B381D00DDA106 /* ViewController.swift */,
 				2CC84C7E223B381D00DDA106 /* Main.storyboard */,
 				2CC84C81223B382100DDA106 /* Assets.xcassets */,
 				2CC84C83223B382100DDA106 /* LaunchScreen.storyboard */,
 				2CC84C86223B382100DDA106 /* Info.plist */,
+				2CC84CA0223B3F1C00DDA106 /* PhotosViewController.swift */,
+				2CC84CA2223B3F9200DDA106 /* FlickerAPI.swift */,
+				2CC84CA4223B3FB800DDA106 /* PhotoStore.swift */,
+				2CC84CA6223B415F00DDA106 /* Photo.swift */,
 			);
 			path = "in-class-assignment";
 			sourceTree = "<group>";
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC84C7D223B381D00DDA106 /* ViewController.swift in Sources */,
+				2CC84CA7223B415F00DDA106 /* Photo.swift in Sources */,
+				2CC84CA5223B3FB800DDA106 /* PhotoStore.swift in Sources */,
+				2CC84CA1223B3F1C00DDA106 /* PhotosViewController.swift in Sources */,
+				2CC84CA3223B3F9200DDA106 /* FlickerAPI.swift in Sources */,
 				2CC84C7B223B381D00DDA106 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
