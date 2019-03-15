@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MgT-Eo-Rg8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,50 +10,50 @@
     </dependencies>
     <scenes>
         <!--Photorama-->
-        <scene sceneID="XPZ-79-Sdc">
+        <scene sceneID="pon-Fv-6fl">
             <objects>
-                <viewController id="Q6l-XA-Tl9" customClass="PhotosViewController" customModule="Photorama" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tx5-YU-CCa">
+                <viewController id="iXu-Oe-ont" customClass="PhotosViewController" customModule="Photorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O51-Xv-oOF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ry7-hz-E3i">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3a9-Z7-Yoa">
                                 <rect key="frame" x="0.0" y="56" width="375" height="611"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ry7-hz-E3i" firstAttribute="leading" secondItem="tx5-YU-CCa" secondAttribute="leading" id="Xxg-cb-mKw"/>
-                            <constraint firstItem="Ry7-hz-E3i" firstAttribute="bottom" secondItem="1Sn-0B-hT8" secondAttribute="bottom" id="hWT-ul-ffa"/>
-                            <constraint firstAttribute="trailing" secondItem="Ry7-hz-E3i" secondAttribute="trailing" id="m8r-hd-vC7"/>
-                            <constraint firstItem="1Sn-0B-hT8" firstAttribute="top" secondItem="Ry7-hz-E3i" secondAttribute="top" constant="8" id="yhq-2o-921"/>
+                            <constraint firstItem="phh-9G-c1X" firstAttribute="top" secondItem="3a9-Z7-Yoa" secondAttribute="top" constant="8" id="5d4-1X-www"/>
+                            <constraint firstItem="3a9-Z7-Yoa" firstAttribute="leading" secondItem="O51-Xv-oOF" secondAttribute="leading" id="fRh-zC-yUl"/>
+                            <constraint firstItem="3a9-Z7-Yoa" firstAttribute="bottom" secondItem="phh-9G-c1X" secondAttribute="bottom" id="oeJ-Ww-Q8o"/>
+                            <constraint firstAttribute="trailing" secondItem="3a9-Z7-Yoa" secondAttribute="trailing" id="plm-Co-Uav"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="1Sn-0B-hT8"/>
+                        <viewLayoutGuide key="safeArea" id="phh-9G-c1X"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Photorama" id="ASz-qd-lww"/>
+                    <navigationItem key="navigationItem" title="Photorama" id="IMr-0g-mqR"/>
                     <connections>
-                        <outlet property="imageView" destination="Ry7-hz-E3i" id="g3u-ME-JHE"/>
+                        <outlet property="imageView" destination="3a9-Z7-Yoa" id="UQo-p5-mmt"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="axW-aI-Ff9" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7G3-Mk-ssL" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1132" y="56"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="gZa-7j-vtp">
+        <scene sceneID="hhi-iX-oj1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TqV-cL-qQy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MgT-Eo-Rg8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tZ1-7u-SYv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B0S-YW-zee">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Q6l-XA-Tl9" kind="relationship" relationship="rootViewController" id="wMN-cS-Otg"/>
+                        <segue destination="iXu-Oe-ont" kind="relationship" relationship="rootViewController" id="327-3t-skd"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CMO-oq-Ugd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cyV-QO-7Z6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="278" y="57"/>
         </scene>
