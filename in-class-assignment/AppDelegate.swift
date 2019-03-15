@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  in-class-assignment
 //
-//  Created by Matin Salehi on 2019-03-14.
+//  Created by Liam Salehi on 2019-03-14.
 //  Copyright © 2019 centennial. All rights reserved.
 //
 
