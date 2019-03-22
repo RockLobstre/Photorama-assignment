@@ -43,24 +43,20 @@ class PhotoStore {
                     print(jsonObject)
                 } catch let error {
                     print("Error creating JSON object: \(error)")
-                } // do
-                //                if let jsonString = String(data: jsonData,
-                //                                           encoding: .utf8) {
-                //                    print(jsonString)
-                //                }
+                }
             } else if let requestError = error {
                 print("Error fetching interesting photos: \(requestError)")
             } else {
                 print("Unexpected error with the request")
-            } // else
+            }
             
             let result = self.processPhotosRequest(data: data, error: error)
             OperationQueue.main.addOperation {
                 completion(result)
             }
-        } // let
+        }
         task.resume()
-    } // func
+    }
     
     private func processPhotosRequest(data: Data?, error: Error?) -> PhotosResult {
         guard let jsonData = data else {
@@ -84,14 +80,13 @@ class PhotoStore {
             }
         }
         task.resume()
-    } // func
+    }
     
     private func processImageRequest(data: Data?, error: Error?) -> ImageResult {
         guard
             let imageData = data,
             let image = UIImage(data: imageData) else {
                 
-                // Couldn't create an image
                 if data == nil {
                     return .failure(error!)
                 } else {
@@ -102,4 +97,3 @@ class PhotoStore {
         return .success(image)
     }
 }
-
